@@ -1,6 +1,6 @@
 'use strict'
 import pizza1 from './pizza1.png';
-const homeHtml = (() => {
+ const homeHtml = () => {
     const content = document.getElementById('content');
     const newElement = (element, parentToAppend) => {
         const create = document.createElement(element);
@@ -8,8 +8,8 @@ const homeHtml = (() => {
         return create;
     }
     // Hero container
-    const pageTitle = newElement('div',content);
-        const title = newElement('h2',pageTitle);
+    const titleContainer = newElement('div',content);
+        const title = newElement('h2',titleContainer);
             title.textContent = 'Home';
         // Body container
     const bodyContainer = newElement('div', content);
@@ -25,12 +25,7 @@ const homeHtml = (() => {
         homeImg.src = pizza1
         homeImg.style = ('height: 50vh;')
         bodyContainer.append(homeImg)
-    const footerContainer = newElement('div',content);
-        // const ghLogo = newElement('')
-    
-
-
-
-})();
+        // const ghLogo = newElement('');
+};
 
 export default homeHtml
