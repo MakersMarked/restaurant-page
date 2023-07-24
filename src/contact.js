@@ -6,6 +6,7 @@ const contactHtml = () => {
         return create;
     }
     const title = newElement('h1',content);
+    title.classList.add('page-title');
     title.textContent = 'Contact Us';
     
 }

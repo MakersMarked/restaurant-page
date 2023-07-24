@@ -1,0 +1,63 @@
+@import "normalize.css";
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+height: 100vh;
+background-image: url('./pizza1.png');
+background-repeat: no-repeat;
+background-position: 50vw;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    margin-left: 20px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    height: 100vh;
+}
+#content {
+    font-size: 1.6rem;
+    width: 50%;    
+}
+#header {
+    display: flex;
+    justify-content:left;
+    gap: 50px;
+    align-items:center;
+    font-size: 2rem;
+}
+#footer {
+    
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items:center;
+}
+#title-container{
+    border-bottom: black 5px groove;
+    width: 50%;
+}
+.page-title{
+    
+}
+.body-container  {
+    
+}
+#about-para{
+   margin-top:10%;
+   margin-right: 20px;
+}
+#home-img{
+    width: 50vw;
+    align-self: center;
+}
+ul {
+    list-style-type: none;
+    
+    font-weight: 800;
+}
+ul li {
+    font-weight: 100;
+        
+}
+
